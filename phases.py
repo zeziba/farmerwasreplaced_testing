@@ -176,7 +176,7 @@ def walk_bfs(path_):
 def get_gold(runs=300):
     plant_maze(get_pos_x(), get_pos_y())
     path = []
-    for i in range(runs - 2):
+    for i in range(runs):
         if i % 100 == 0:
             maze, dest = build_maze_sp()
         path = maze_solve_bfs(dest, build_graph(maze))
